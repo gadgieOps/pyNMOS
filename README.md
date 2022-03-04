@@ -1,7 +1,7 @@
 # NMOS-pyController
 Python based NMOS controller
 
-Work in progress python based NMOS controller
+Work in progress python based NMOS controller.
 
 
 
@@ -15,7 +15,7 @@ service_discovery.py - used to discover registration servers via DNS-SD<br>
 
 utility.py - functions that are shared between registry and nodes<br>
 
-controller.py - discovers registries and creates instances to the elected, discovers nodes and creates connection instances, creates ws connection to registry and keeps a local postgres database up to date<br>
+controller.py - discovers registries and creates instances to the elected, discovers nodes and creates connection instances, creates ws connection to registry and keeps a local postgres database up to date. Idea is that this would run and allow users to interact with the application through a front end/api<br>
 
 db.py - manages the db required by controller.py<br>
 
