@@ -15,7 +15,7 @@ Work in progress python based NMOS controller. The classes and functions in nmos
 
 <b>utility.py</b> - functions that are shared between registry and nodes<br>
 
-<b>controller.py</b> - discovers registries and creates instances to the elected, discovers nodes and creates connection instances, creates ws connection to registry and keeps a local postgres database up to date. Idea is that this would run and allow users to interact with the application through a front end/api<br>
+<b>controller.py</b> - discovers registries and creates instances to the administrativley highest priority RDS, discovers nodes and creates node/connection instances, creates ws connection to registry and keeps a local postgres database up to date. Idea is that this would run and allow users to interact with the application through a front end/api<br>
 
 <b>db.py</b> - manages the db required by controller.py<br>
 
