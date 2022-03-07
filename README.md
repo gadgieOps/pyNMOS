@@ -20,3 +20,7 @@ Work in progress python based NMOS controller. The classes and functions in nmos
 <b>db.py</b> - manages the db required by controller.py<br>
 
 <b>api.py</b> - HTTP API to sit in front of controller.py for front end integration<br>
+
+================================================================
+
+Logging is currently hardcoded to: /home/dave/.nmos_client/logs/nmos.log in nmos_client/__init__.py. This needs changing to something more useful.
