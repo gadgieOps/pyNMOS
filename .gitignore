@@ -1,3 +1,4 @@
 .nmos_client
 nmos_client/__pycache__
 venv
+.idea
