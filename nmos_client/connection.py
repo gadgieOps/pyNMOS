@@ -86,14 +86,13 @@ class Connection(NmosCommon, ServiceDiscovery):
         self.log.info(f'Attempting to retrieve transport file for sender: {id}')
         self.log.debug(f'URL: {self.url}single/senders/{id}/transportfile')
         try:
-            resp = urllib.request.urlopen(f'{self.url}single/senders/{id}/transportfile')
+            resp = urllib.request.urlopen(f'{self.url}single/senders/{id}/transportfile').read()
         except urllib.error.HTTPError:
             self.log.exception(f'No transport file found for {id}')
             return False
 
         self.log.info(f'Got transport file for sender: {id}')
-        self.log.debug(f'{resp.read().decode("utf-8")}')
-        resp = resp.read()
+        self.log.debug(f'{resp.decode("utf-8")}')
         return resp.decode('utf-8')
 
     ###
