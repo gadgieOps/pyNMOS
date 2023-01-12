@@ -3,9 +3,8 @@ import os
 import datetime
 import pprint
 from typing import Optional, Any
-from utility import NmosCommon, RegistryNodeShared
+from nmos_client.utility import NmosCommon, RegistryNodeShared
 from nmos_client.service_discovery import ServiceDiscovery
-
 
 class Registry(NmosCommon, RegistryNodeShared, ServiceDiscovery):
     """

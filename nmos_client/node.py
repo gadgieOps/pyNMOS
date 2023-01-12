@@ -1,8 +1,8 @@
 import logging
 from typing import Any
 from urllib.parse import urlparse
-from utility import NmosCommon, RegistryNodeShared
-from service_discovery import ServiceDiscovery
+from nmos_client.utility import NmosCommon, RegistryNodeShared
+from nmos_client.service_discovery import ServiceDiscovery
 
 
 class Node(NmosCommon, RegistryNodeShared, ServiceDiscovery):

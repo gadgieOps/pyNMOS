@@ -1,7 +1,7 @@
 import urllib.request
 from typing import Optional
-from utility import *
-from service_discovery import ServiceDiscovery
+from nmos_client.utility import *
+from nmos_client.service_discovery import ServiceDiscovery
 
 
 class Connection(NmosCommon, ServiceDiscovery):
