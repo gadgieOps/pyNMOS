@@ -51,7 +51,3 @@ Collaboration
 -------------
 Please feel free to fork and submit pull requests
 
-Author
-------
-David Sampson
-david.sampson@lawo.com
